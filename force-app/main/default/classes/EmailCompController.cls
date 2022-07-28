@@ -1,5 +1,6 @@
 public class EmailCompController {
-    
+    // Added comments for the Apex class
+    // Git source control demo
      @AuraEnabled 
     public static String previewMailMethod(String mMail ,String mSubject ,String mbody, String leadId,String folderId,String templateId ){
         

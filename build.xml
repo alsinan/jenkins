@@ -1,7 +1,13 @@
-<project name="Jenkins" default="main" basedir="." xmlns:sf="antlib:com.salesforce">
-  <property file="build.properties" />
-  <property environment="env" />
-    <target name="deployall">
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app" />
+<project name="Sample" basedir=".." xmlns:sf="antlib:com.salesforce">
+    <property environment="env"/>
+    <target name="deploy">
+      <sf:deploy username="${sf.username}" 
+        password="${sf.password}" 
+        serverurl="${sf.serverUrl}" 
+        maxPoll="200"
+        pollWaitMillis="500000"
+        testLevel="${sf.testLevel}"
+        deployRoot="src" 
+        checkOnly="${sf.checkOnly}" />
     </target>
 </project>

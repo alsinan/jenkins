@@ -1,0 +1,9 @@
+<aura:component implements="forceCommunity:profileMenuInterface" access="global">
+    <aura:attribute name="options" type="String[]" default="['Option 1', 'Option 2']"/>
+    <lightning:avatar variant="circle" src="" fallbackIconName="standard:person_account" alternativeText="Account User"/>
+    <lightning:buttonMenu alternativeText="Profile Menu" variant="container" iconName="utility:connected_apps">
+        <aura:iteration items="{!v.options}" var="itemLabel">
+            <lightning:menuItem label="{!itemLabel}" />
+        </aura:iteration>        
+    </lightning:buttonMenu>
+</aura:component>

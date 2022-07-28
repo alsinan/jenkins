@@ -1,4 +1,4 @@
-<project name="Jenkins" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="Jenkins" default="main" basedir="." xmlns:sf="antlib:com.salesforce">
   <property file="build.properties" />
   <property environment="env" />
     <target name="deployall">

@@ -1,0 +1,55 @@
+/* SLDS OVERRIDES */
+
+.THIS a:hover,
+.THIS a:focus {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* COPIED FROM https://getmdl.io/templates/index.html (PREFIXED WITH .THIS) */
+
+.THIS .mdl-demo {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .THIS .mdl-demo .mdl-layout__header-row {
+    padding-left: 40px;
+  }
+  .THIS .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
+    font-size: inherit;
+  }
+  .THIS .mdl-demo .mdl-layout__tab-bar-button {
+    display: none;
+  }
+  .THIS .mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
+    display: none;
+  }
+  .THIS .mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,
+  .THIS .mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
+    overflow: visible;
+  }
+  .THIS .mdl-demo .mdl-layout__tab-bar-container {
+    height: 64px;
+  }
+  .THIS .mdl-demo .mdl-layout__tab-bar {
+    padding: 0;
+    padding-left: 16px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+  }
+  .THIS .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
+    height: 64px;
+    line-height: 64px;
+  }
+  .THIS .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
+    background-color: white;
+    height: 4px;
+  }
+  .THIS .mdl-demo #search {
+      position: absolute;
+      right: 40px;
+      top: 36px;
+      z-index: 999;
+    }

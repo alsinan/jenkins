@@ -1,0 +1,21 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <div class="c-container">
+        <lightning:layout verticalAlign="stretch" multipleRows="true" class="x-large">
+            <lightning:layoutItem flexibility="auto" padding="around-small" class="custom-box" size="2">
+                <div>
+                    <lightning:verticalNavigation selectedItem="recent" shaded="true">
+                        <lightning:verticalNavigationSection label="Menu">
+                            <lightning:verticalNavigationItem label="Sales KPIs" name="recent" />
+                            <lightning:verticalNavigationItem label="Buy Box KPIs" name="created" />
+                            <lightning:verticalNavigationItem label="Pricing KPIs" name="private" />
+                            <lightning:verticalNavigationItem label="Seller KPIs" name="public" />
+                        </lightning:verticalNavigationSection>
+                    </lightning:verticalNavigation>
+                </div>
+            </lightning:layoutItem >
+            <lightning:layoutItem flexibility="auto" padding="around-small" class="custom-box" size="10">
+                
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>
